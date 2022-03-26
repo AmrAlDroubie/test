@@ -1,0 +1,53 @@
+/* ================== Main Rules ================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    padding: 30px 0;
+    min-height: 600px;
+    background: linear-gradient( #fff 0%, #f8fbe6 22.65%, #f3f8d3 47.76%, #f0f6c7 73.37%, #eff6c4 100%);
+}
+
+header a {
+    background-image: url("../images/header_btn_back.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: #fff;
+    width: 150px;
+    height: 50px;
+    display: block;
+    text-align: center;
+    padding: 12px 0;
+}
+
+header img {}
+
+.carousel-inner {
+    width: 400px;
+    overflow: hidden;
+    margin-left: auto;
+    position: relative;
+}
+
+.carousel-inner::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 100%;
+    box-shadow: 0 15px 20px rgba(255, 255, 255, 0.157);
+    position: absolute;
+    left: -50%;
+    top: 0;
+}
